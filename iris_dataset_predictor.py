@@ -1,10 +1,9 @@
-from sklearn import datasets
 import streamlit as st
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.datasets import load_iris
 import pandas as pd
 
-iris = datasets.load_iris()
+iris = load_iris()
 X = iris.data
 Y = iris.target
 
