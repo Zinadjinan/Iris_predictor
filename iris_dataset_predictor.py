@@ -1,5 +1,5 @@
 import streamlit as st
-from sklearn.ensemble import RandomForestClassifier
+from sklearn import ensemble
 from sklearn.datasets import load_iris
 import pandas as pd
 
@@ -7,7 +7,7 @@ iris = load_iris()
 X = iris.data
 Y = iris.target
 
-clf = RandomForestClassifier()
+clf = ensemble.RandomForestClassifier()
 clf.fit(X, Y)
 
 st.title('Iris Flower Prediction')
